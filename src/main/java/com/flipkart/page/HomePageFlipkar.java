@@ -2,6 +2,7 @@ package com.flipkart.page;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +10,6 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import com.flip.qa.Base.Base;
-
 import com.flip.qa.utils.UitlityTest;
 
 public class HomePageFlipkar extends Base {
@@ -25,7 +25,8 @@ public class HomePageFlipkar extends Base {
 	@FindBy(how = How.XPATH, using = "//img[contains(@class,'_1e_EAo')")
 	private WebElement flipImage;
 
-	public HomePageFlipkar() {
+	public HomePageFlipkar(WebDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -48,7 +49,7 @@ public class HomePageFlipkar extends Base {
 				     }
 		}
 		*/
-		return new AppleStore();
+		return new AppleStore(driver);
 	}
 
 	public SamsungPage clickSamsung() {
