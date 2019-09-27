@@ -23,7 +23,7 @@ public class HomePageflipTest extends Base {
 		// inilization page
 		initilaize();
 		// crete obejct loginpage
-		login = new LoginpageFlipkart();
+		login = new LoginpageFlipkart(driver);
 		// get user name password.
 		homefl_page = login.getuserNamePasswor(prop.getProperty("username"),
 				prop.getProperty("password"));

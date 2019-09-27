@@ -15,23 +15,27 @@ public class ApplepriceTest extends Base{
 	HomePageFlipkar  homePageFlipkar;
 	AppleStore   applestore;
 	ApplepricePage applepricePage; 
-	WebDriver driver;
 	@BeforeMethod
 	public void setup() throws InterruptedException{
 		    initilaize();
-		    LoginpageFlipkart=new LoginpageFlipkart();
+		    LoginpageFlipkart=new LoginpageFlipkart(driver);
+		    Thread.sleep(2000);
+		    // get user name password
 		    homePageFlipkar= LoginpageFlipkart.getuserNamePasswor(prop.getProperty("username"), prop.getProperty("password"));
 		    Thread.sleep(2000);
+		    //click on menu electronics
 		    homePageFlipkar.menuIcon();
-		   // Thread.sleep(2000);
+		  
+		    // click on apple item
 		    homePageFlipkar.clickonhomeApple();
 		    Thread.sleep(2000);
-		    applestore=new AppleStore(); 
+		    applestore=new AppleStore(driver); 
+		    //scroll and clik.
 		    applepricePage=applestore.appleitemName();
 	}
 	@Test
 	public  void  verifyApplePrice() throws InterruptedException{
-		Thread.sleep(2000);
+		
 		applepricePage.clikonAppleSerie();
 	}
 	

@@ -22,7 +22,7 @@ public class ApplestoreTest extends Base {
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		initilaize();
-	     loginpageFlipkart = new LoginpageFlipkart();
+	     loginpageFlipkart = new LoginpageFlipkart(driver);
 		homePageFlipkar = loginpageFlipkart.getuserNamePasswor(
 				prop.getProperty("username"), prop.getProperty("password"));
 		Thread.sleep(2000);
@@ -30,7 +30,6 @@ public class ApplestoreTest extends Base {
 		homePageFlipkar.menuIcon();
 		
 		System.out.println("applestore");
-		//Thread.sleep(2000);
 	}
 
 	@Test
