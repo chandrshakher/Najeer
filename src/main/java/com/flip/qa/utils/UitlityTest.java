@@ -18,6 +18,7 @@ public class UitlityTest extends Base {
 		Actions acts = new Actions(driver);
 		acts.moveToElement(ele).build().perform();
 		acts.click();
+		System.out.println("githubtesting with jenkin");
 	}
 	public static void doClick(WebElement eel){
 		      eel.click();
