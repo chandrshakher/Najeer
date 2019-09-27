@@ -23,8 +23,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/RJ/Downloads/apache-log4j-2.12.1-bin/log4j-api-2.12.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/RJ/Downloads/apache-log4j-2.12.1-bin/log4j-core-2.12.1.jar"/>
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
