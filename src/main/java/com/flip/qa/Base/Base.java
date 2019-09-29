@@ -33,7 +33,7 @@ public class Base {
 	}
 
 	public static void initilaize() {
-		// call browser
+		// call browser git testing
 		String browser1 = prop.getProperty("browser");
 	 if (driver == null && browser1.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
