@@ -33,7 +33,7 @@ public class Base {
 	}
 
 	public static void initilaize() {
-		// call browser git testing
+		// call browser tt
 		String browser1 = prop.getProperty("browser");
 	 if (driver == null && browser1.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
@@ -44,7 +44,7 @@ public class Base {
 	 // driver.manage().timeouts().pageLoadTimeout(UitlityTest.Page_Load_Timeout, TimeUnit.SECONDS);
 	   driver.manage().timeouts().implicitlyWait(UitlityTest.Implicit_Wait, TimeUnit.SECONDS);
 	   driver.get(prop.getProperty("url"));
-	      
+	      System.out.println("git testing");
 		  
 		
 	}
