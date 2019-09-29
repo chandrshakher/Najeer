@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18344" started-at="2019-09-29T10:21:37Z" finished-at="2019-09-29T10:21:55Z">
+  <suite name="Default suite" duration-ms="15914" started-at="2019-09-29T13:49:57Z" finished-at="2019-09-29T13:50:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18344" started-at="2019-09-29T10:21:37Z" finished-at="2019-09-29T10:21:55Z">
+    <test name="Default test" duration-ms="15914" started-at="2019-09-29T13:49:57Z" finished-at="2019-09-29T13:50:13Z">
       <class name="com.login_pageTest.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.login_pageTest.LoginPageTest@5c7fa833]" name="setup" is-config="true" duration-ms="12232" started-at="2019-09-29T15:51:37Z" finished-at="2019-09-29T15:51:49Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.login_pageTest.LoginPageTest@5c7fa833]" name="setup" is-config="true" duration-ms="14939" started-at="2019-09-29T19:19:57Z" finished-at="2019-09-29T19:20:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.login_pageTest.LoginPageTest@5c7fa833]" name="loginTest" duration-ms="6060" started-at="2019-09-29T15:51:49Z" finished-at="2019-09-29T15:51:55Z">
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.login_pageTest.LoginPageTest@5c7fa833]" name="loginTest" duration-ms="867" started-at="2019-09-29T19:20:12Z" finished-at="2019-09-29T19:20:13Z">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[No reporters were started. Atleast 1 reporter must be started to create tests.]]>
@@ -52,11 +52,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="FAIL" signature="testreport()[pri:0, instance:com.login_pageTest.LoginPageTest@5c7fa833]" name="testreport" is-config="true" duration-ms="0" started-at="2019-09-29T15:51:55Z" finished-at="2019-09-29T15:51:55Z">
+        <test-method status="FAIL" signature="testreport(org.testng.ITestResult)[pri:0, instance:com.login_pageTest.LoginPageTest@5c7fa833]" name="testreport" is-config="true" duration-ms="0" started-at="2019-09-29T19:20:13Z" finished-at="2019-09-29T19:20:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=FAILURE method=LoginPageTest.loginTest()[pri:0, instance:com.login_pageTest.LoginPageTest@5c7fa833] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.qa.ExtentRepot.Extentreporttest.capturedscreenshot(Extentreporttest.java:33)
+	at com.qa.ExtentRepot.Extentreporttest.capturedscreenshot(Extentreporttest.java:37)
 	at com.login_pageTest.LoginPageTest.testreport(LoginPageTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -90,7 +97,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testreport -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.login_pageTest.LoginPageTest@5c7fa833]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-09-29T15:51:55Z" finished-at="2019-09-29T15:51:55Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.login_pageTest.LoginPageTest@5c7fa833]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-09-29T19:20:13Z" finished-at="2019-09-29T19:20:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

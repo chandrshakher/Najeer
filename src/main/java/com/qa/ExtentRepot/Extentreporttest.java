@@ -15,7 +15,7 @@ import com.flip.qa.Base.Base;
 public class Extentreporttest extends Base{
               ExtentHtmlReporter extentHtmlReporter;
               ExtentReports extentReports;
-            ExtentTest extentTest;
+            ExtentTest extentTest= new ExtentTest(extentReports, null, null);
             
               //ITestResult result;
               // befiore suite before any anotation
@@ -30,16 +30,23 @@ public class Extentreporttest extends Base{
               }
               // after method or afterclass
 	public void capturedscreenshot(ITestResult result){
+		System.out.println("bhim sir"+result);
+		System.out.println("bhim sir"+result.getStatus());
 		if(ITestResult.FAILURE==result.getStatus()){
+			System.out.println("bhim sir fail:"+result.getStatus()+"yada:"+extentTest);
 			extentTest.fail(MarkupHelper.createLabel(result.getName()+"Yadav testcasefaild: ", ExtentColor.RED));
+			System.out.println("bhim sir markup:"+result.getStatus());
 			extentTest.fail(result.getThrowable());
+			System.out.println("bhim sir throwable:"+result.getStatus());
 		}
 		else if(ITestResult.SUCCESS==result.getStatus()){
+			System.out.println("bhim sir success:"+result.getStatus());
 			extentTest.pass(MarkupHelper.createLabel(result.getName()+"Yadav Pass testcase:", ExtentColor.GREEN));
 			
 		
 		}
 		else{
+			System.out.println("bhim sir skip"+result.getStatus());
 			extentTest.skip(MarkupHelper.createLabel(result.getName()+"yada skip", ExtentColor.YELLOW));
 		      extentTest.skip(result.getThrowable());
 		}
