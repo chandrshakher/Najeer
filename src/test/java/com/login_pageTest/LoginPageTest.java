@@ -56,8 +56,8 @@ public LoginPageTest() {
 		
 	}
 	@AfterMethod
-	public void testreport(){
-		
+	public void testreport(ITestResult result){
+	
 		extentreporttest.capturedscreenshot(result);
 		
 	}
