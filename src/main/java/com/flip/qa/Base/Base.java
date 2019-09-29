@@ -37,7 +37,7 @@ public class Base {
 		String browser1 = prop.getProperty("browser");
 	 if (driver == null && browser1.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"E://Yadav Selenium//Chrome//chromedriver.exe");
+					"C://Users//RJ//Downloads//chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 	 driver.manage().window().maximize();

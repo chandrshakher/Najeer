@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.login_pageTest.ApplepriceTest">
+      <class name="com.login_pageTest.LoginPageTest">
         <methods>
+          <include name="loginTest"/>
           <include name="setup"/>
-          <include name="verifyApplePrice"/>
+          <include name="testreport"/>
         </methods>
-      </class> <!-- com.login_pageTest.ApplepriceTest -->
+      </class> <!-- com.login_pageTest.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
