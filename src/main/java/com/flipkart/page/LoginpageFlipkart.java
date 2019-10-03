@@ -23,7 +23,7 @@ public class LoginpageFlipkart extends Base {
 	private WebElement flipImage;
 
 	public LoginpageFlipkart(WebDriver driver) {
-		this.driver = driver;
+		super();
 		PageFactory.initElements(driver, this);
 	}
 

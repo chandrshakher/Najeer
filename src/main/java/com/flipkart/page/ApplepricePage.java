@@ -12,7 +12,7 @@ import com.flip.qa.Base.Base;
 
 public class ApplepricePage extends Base {
 	public ApplepricePage(WebDriver driver) {
-		this.driver = driver;
+		super();
 		PageFactory.initElements(driver, this);
 	}
 

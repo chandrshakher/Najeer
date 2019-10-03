@@ -26,7 +26,7 @@ public class HomePageFlipkar extends Base {
 	private WebElement flipImage;
 
 	public HomePageFlipkar(WebDriver driver) {
-		this.driver=driver;
+		super();
 		PageFactory.initElements(driver, this);
 	}
 

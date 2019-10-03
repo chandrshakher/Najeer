@@ -18,6 +18,7 @@ public class Base {
 	public static FileInputStream fs;
 
 	public Base() {
+		
 		try {
 			// properties get
 			prop = new Properties();

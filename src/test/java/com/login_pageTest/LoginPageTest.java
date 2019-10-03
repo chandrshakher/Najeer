@@ -50,8 +50,8 @@ public LoginPageTest() {
 		
 		loginpageFlipkart.getuserNamePasswor(
 				prop.getProperty("username"), prop.getProperty("password"));
-		extentTest=extentReports.createTest("loginTest");
-		System.out.println("Check result status="+result.getStatus());   
+		//extentTest=extentReports.createTest("loginTest");
+	//	System.out.println("Check result status="+result.getStatus());   
 		Assert.assertTrue(1>0);
 		
 	}

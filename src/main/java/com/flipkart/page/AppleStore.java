@@ -17,7 +17,7 @@ public class AppleStore extends Base {
 
 	// @FindBy(how=How.XPATH, using="(//*//img[@class='_2VeolH _3I5S6S'])[3]")
 	public AppleStore(WebDriver dirver) {
-		this.driver = driver;
+		super();
 		PageFactory.initElements(driver, this);
 	}
 

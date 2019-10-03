@@ -6,8 +6,6 @@
       <class name="com.login_pageTest.LoginPageTest">
         <methods>
           <include name="loginTest"/>
-          <include name="setup"/>
-          <include name="testreport"/>
         </methods>
       </class> <!-- com.login_pageTest.LoginPageTest -->
     </classes>
